@@ -2,7 +2,7 @@ Test Práctico Front-End creado para Mercado Libre.
 Utilicé React.js, Sass y algo de metodología BEM.
 
 Llegué a crear las vistas solicitadas, haciéndolas responsive para tamaños tablet (768px) y mobile (480px).
-Para probar las vistas creé unos Json ficticios que se ubican dentro de client/src/dummy-data.
+Para probar las vistas creé unos Json ficticios que se ubican dentro de /src/dummy-data.
 No pude crear la capa de conexión de la API con el cliente, pero no por falta de tiempo si no por desconocimiento e inexperiencia en esa parte, lo cual este trabajo me ha dado el puntapié para saber que tengo que aprender y practicar bien estas tecnologías.
 Muchas gracias por la oportunidad!
 
