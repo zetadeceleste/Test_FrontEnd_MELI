@@ -1,0 +1,51 @@
+//Tamaños de Letras
+$font-size-small-1: 12px;
+$font-size-small-2: 14px;
+$font-size-regular-1: 16px;
+$font-size-regular-2: 18px;
+$font-size-large-1: 24px;
+$font-size-large-2: 28px;
+$font-size-x-large: 46px;
+// Colores
+$color-golden-yellow: #FFE600;
+$color-navy-blue: #3483FA;
+$color-night-rider: #333;
+$color-dim-gray: #666;
+$color-nobel: #999;
+$color-whisper: #EEE;
+//Imágenes
+$ico-search-1: '../assets/ic_Search.png';
+$ico-search-2: '../assets/ic_Search@2x.png.png';
+$ico-shipping-1: '../assets/ic_shipping.png';
+$ico-shipping-2: '../assets/ic_shipping@2x.png.png';
+$img-logo-ml-1: '../assets/Logo_ML.png';
+$img-logo-ml-2: '../assets/Logo_ML@2x.png.png';
+//EJEMPLO
+$img-example: '../assets/example.jpg';
+//Espaciados
+$space-1: 16px;
+$space-2: 32px;
+//Border Radius
+$border-radius: 4px;
+//Tamaños de Imágenes
+$large: 680px;
+
+@mixin thumbnail {
+    width: 180px;
+    height: 180px;
+}
+
+//Display Flex
+@mixin flex($flow) {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: $flow;
+}
+
+//Background
+@mixin background($image, $position, $size) {
+    background-image: url($image);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
+}

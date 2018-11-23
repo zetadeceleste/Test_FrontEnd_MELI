@@ -1,0 +1,10 @@
+@import '../assets/scss/vars.scss';
+.Breadcrumb {
+    font-size: $font-size-small-2;
+    color: $color-night-rider;
+    padding: $space-1 0 $space-1 0;
+    opacity: 0.7;
+    &__search {
+        font-weight: 700;
+    }
+}

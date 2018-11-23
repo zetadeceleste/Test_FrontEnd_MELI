@@ -1,0 +1,53 @@
+@import '../assets/scss/vars.scss';
+.SearchBar {
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-golden-yellow;
+    width: 80%;
+    height: 8vh;
+    padding: 0 10%;
+    &__logo {
+        @include background($img-logo-ml-1, left, auto);
+        width: 60px;
+        height: 6vh;
+    }
+    &__search-form {
+        display: inline-flex;
+        height: 6vh;
+        &__input {
+            font-size: $font-size-regular-2;
+            color: $color-night-rider;
+            height: 100%;
+            width: 70vw;
+            padding: 0;
+            padding-left: 15px;
+            border: none;
+            border-radius: $border-radius 0 0 $border-radius;
+            &::placeholder {
+                opacity: 0.7;
+            }
+        }
+        &__button {
+            @include background($ico-search-2, center, 20px);
+            background-color: $color-whisper;
+            width: 3vw;
+            border: none;
+            border-radius: 0 $border-radius $border-radius 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .SearchBar {
+        width: 90%;
+        padding: 0 5%;
+        &__search-form__button {
+            width: 6vw;
+        }
+        &__search-form__input {
+            width: 65vw;
+        }
+    }
+}

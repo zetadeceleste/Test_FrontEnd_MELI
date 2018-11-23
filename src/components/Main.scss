@@ -1,0 +1,23 @@
+@import '../assets/scss/vars.scss';
+.Main {
+    background-color: $color-whisper;
+    padding-bottom: 5%;
+    &__search-breadcrumb,
+    &__search-results {
+        margin: 0 10%;
+    }
+    &__search-results {
+        background-color: white;
+        min-height: 100vh;
+        border-radius: $border-radius;
+    }
+}
+
+@media (max-width: 768px) {
+    .Main {
+        &__search-breadcrumb,
+        &__search-results {
+            margin: 0 5%;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "items": [
+        {
+            "id": "1234",
+            "title": "Guitarra Epiphone Casino Coupé",
+            "price": {
+                "currency": "ARS",
+                "amount": 28000,
+                "decimals": 0
+            },
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3Qtx3egbwmzPiFt4g7LXI0G_ZRSuH5JW9zNwYWDs2xMu8tXB2g",
+            "condition": "Usado",
+            "free_shipping": false,
+            "location": "Mendoza"
+        },
+        {
+            "id": "5678",
+            "title": "Guitarra Epiphone Les Paul Studio II",
+            "price": {
+                "currency": "ARS",
+                "amount": 14000,
+                "decimals": 0
+            },
+            "picture": "https://media.musiciansfriend.com/is/image/MMGS7/Les-Paul-Studio-Electric-Guitar-Ebony/518351000001000-00-500x500.jpg",
+            "condition": "Usado",
+            "free_shipping": false,
+            "location": "Mendoza"
+        },
+        {
+            "id": "8912",
+            "title": "Guitarra Yamaha APX 700II",
+            "price": {
+                "currency": "ARS",
+                "amount": 32000,
+                "decimals": 0
+            },
+            "picture": "https://images.richtonemusic.co.uk/product/YYAMAHA57343b.jpg",
+            "condition": "Nuevo",
+            "free_shipping": true,
+            "location": "Mendoza"
+        },
+        {
+            "id": "3456",
+            "title": "Guitarra Epiphone Wilshire Worn 1966",
+            "price": {
+                "currency": "ARS",
+                "amount": 16000,
+                "decimals": 0
+            },
+            "picture": "https://d1aeri3ty3izns.cloudfront.net/media/2/28217/1200/preview.jpg",
+            "condition": "Usado",
+            "free_shipping": true,
+            "location": "Mendoza"
+        }
+    ]
+}

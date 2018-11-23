@@ -1,0 +1,71 @@
+@import '../assets/scss/vars.scss';
+.SearchResults {
+    &__result {
+        @include flex(row);
+        color: $color-dim-gray;
+        padding: $space-1 0;
+        &__thumbnail {
+            @include thumbnail;
+            border-radius: $border-radius;
+            margin: 0 $space-1;
+            cursor: pointer;
+        }
+        &__detail {
+            padding-top: $space-1;
+            width: 50vw;
+            &-price-free-shipping {
+                @include flex(row);
+                align-items: center;
+            }
+            &-price {
+                font-size: $font-size-large-1;
+            }
+            &-free-shipping {
+                @include background($ico-shipping-1, center, cover);
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+            }
+            &-title,
+            &-condition {
+                font-size: $font-size-regular-2;
+            }
+        }
+        &__location {
+            font-size: $font-size-small-1;
+            padding-top: $space-1;
+        }
+        &-line {
+            margin: 0 25px;
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .SearchResults__result__detail {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .SearchResults__result {
+        padding: 10px;
+        &__thumbnail {
+            margin: 0 ($space-1/2);
+        }
+        &__detail,
+        &__location {
+            padding-top: 0;
+        }
+        &__detail {
+            &-price {
+                font-size: $font-size-regular-2;
+            }
+            &-title,
+            &-condition {
+                font-size: $font-size-regular-1;
+            }
+        }
+    }
+}

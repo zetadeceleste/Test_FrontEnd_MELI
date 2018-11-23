@@ -1,0 +1,82 @@
+@import '../assets/scss/vars.scss';
+.ItemDetail {
+    @include flex(column);
+    justify-content: space-between;
+    padding: $space-2;
+    min-height: 110vh;
+    &__picture-detail {
+        @include flex(row);
+        justify-content: space-between;
+    }
+    &__picture {
+        width: $large;
+        height: 60vh;
+    }
+    &__detail {
+        width: 20vw;
+        &-condition-sold-quantity {
+            @include flex(row);
+            align-items: center;
+        }
+        &-condition,
+        &-sold-quantity {
+            font-size: $font-size-small-2;
+        }
+        &-title {
+            font-size: $font-size-large-1;
+            margin-top: $space-1;
+        }
+        &-price {
+            font-size: $font-size-x-large;
+            margin: $space-2 0;
+        }
+        &-input-button {
+            background-color: $color-navy-blue;
+            font-size: $font-size-regular-2;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: $border-radius;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(52, 131, 250, .8);
+            }
+        }
+    }
+    &__description {
+        &-title {
+            font-size: $font-size-large-2;
+            margin-bottom: $space-2;
+        }
+        &-text {
+            font-size: $font-size-regular-1;
+            max-width: $large;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ItemDetail {
+        justify-content: center;
+        &__picture-detail {
+            @include flex(column);
+        }
+        &__picture,
+        &__detail {
+            width: 100%;
+            margin: 15px 0;
+            &-title {
+                margin-top: 0;
+            }
+            &-price {
+                margin: ($space-2/2) 0;
+            }
+        }
+        &__description {
+            &-title {
+                margin-bottom: ($space-2/2);
+            }
+        }
+    }
+}

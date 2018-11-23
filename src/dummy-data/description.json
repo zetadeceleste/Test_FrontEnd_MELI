@@ -1,0 +1,16 @@
+{
+    "item": {
+        "id": "1234",
+        "title": "Guitarra Epiphone Casino Coupé",
+        "price": {
+            "currency": "ARS",
+            "amount": 28000,
+            "decimals": 0
+        },
+        "picture": "https://www.muziker.cz/image/2/0049/hcmf.epiphone_casino_coupe_ch_jpg.jpg",
+        "condition": "Usado",
+        "free_shipping": false,
+        "sold_quantity": 0,
+        "description": "¡Excelente guitarra!, muy poco uso. Incluye estuche rígido."
+    }
+}
